@@ -1,54 +1,51 @@
-# React + TypeScript + Vite
+# 📚 FlashMind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+_A smart, lightweight flashcard study app powered by AI to help you retain knowledge faster._
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🧠 **AI-Powered Cards**: Generate personalized questions and summaries using AI
+- ✍️ **Create & Organize Flashcards**: By topic, subject, or difficulty
+- 🧪 **Quiz Yourself**: Test knowledge with self-check questions
+- 📊 **Progress Tracking**: See what you’ve mastered and what needs review
+- 💾 **Offline-Ready (PWA)**: Install on your phone and study on the go
+- 🌙 **Dark Mode**: For night study sessions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🧠 How AI Works
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Uses OpenAI or Gemini to:
+  - Summarize pasted study material
+  - Auto-generate multiple flashcards
+  - Suggest quiz questions based on content
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+> You control the AI output — fast, light, no bloated responses.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 🛠️ Built With
+
+- **React** + **TypeScript**
+- **OpenAI / Gemini API**
+- **Tailwind CSS**
+- **Firebase (for auth & storage)**
+- **PWA Support**
+
+---
+
+## 📱 Live Demo
+
+> Coming soon or [yourapp.vercel.app](https://yourapp.vercel.app)
+
+---
+
+## 🧪 Installation
+
+```bash
+git clone https://github.com/yourusername/flashcard-ai-study-app.git
+cd flashcard-ai-study-app
+npm install
+npm run dev
